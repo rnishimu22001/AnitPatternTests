@@ -16,11 +16,12 @@ final class ViewControllerLifecycleTests: XCTestCase {
         let expectation = self.expectation(description: "dispatch queueが実行されること")
         DispatchQueue.main.async {
             // When
-            UIApplication.shared.windows.first?.rootViewController = target
-            // Then
-            expectation.fulfill()
-            XCTAssertEqual(output.invokedSetupCount, 1)
-            XCTAssertEqual(output.invokedWantToInvokeAfterSetupCount, 1)
+            UIApplication.shared.windows.first?.rootViewController?.present(target, animated: false) {
+                // Then
+                expectation.fulfill()
+                XCTAssertEqual(output.invokedSetupCount, 1)
+                XCTAssertEqual(output.invokedWantToInvokeAfterSetupCount, 1)
+            }
         }
         wait(for: [expectation], timeout: 5)
     }
