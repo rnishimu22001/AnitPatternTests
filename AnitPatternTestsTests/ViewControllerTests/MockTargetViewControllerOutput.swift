@@ -8,13 +8,9 @@
 @testable import AnitPatternTests
 
 final class MockTargetViewControllerOutput: TargetViewControllerOutput {
-    var invokedSetupCount = 0
-    func setup() {
-        invokedSetupCount += 1
-    }
     
-    var invokedWantToInvokeAfterSetupCount = 0
-    func wantToInvokeAfterSetup() {
-        invokedWantToInvokeAfterSetupCount += 1
+    var invokedWantToInvokeOnlyOnceCount = 0
+    func wantToInvokeOnlyOnce() {
+        invokedWantToInvokeOnlyOnceCount += 1
     }
 }

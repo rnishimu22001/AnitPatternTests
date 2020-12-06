@@ -8,15 +8,14 @@
 import UIKit
 
 protocol TargetViewControllerOutput {
-    /// オブジェクトを使う前の前処理
-    func setup()
-    /// setup後に呼び出したい処理
-    func wantToInvokeAfterSetup()
+    /// ViewControllerで表示された時に一度だけ呼び出したい処理
+    func wantToInvokeOnlyOnce()
 }
 
 final class TargetViewController: UIViewController {
     
     let output: TargetViewControllerOutput
+    private var isDidAppear = false
     
     init(output: TargetViewControllerOutput) {
         self.output = output
@@ -27,13 +26,11 @@ final class TargetViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        output.setup()
-    }
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        output.wantToInvokeAfterSetup()
+        if !isDidAppear {
+            output.wantToInvokeOnlyOnce()
+        }
+        isDidAppear = true
     }
 }
