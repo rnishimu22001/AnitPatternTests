@@ -21,6 +21,7 @@
 		B4D943A7257C9A8800642F65 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D943A6257C9A8800642F65 /* ViewControllerTests.swift */; };
 		B4D943AC257C9DB000642F65 /* TargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D943AB257C9DB000642F65 /* TargetViewController.swift */; };
 		B4D943B2257C9F1300642F65 /* ViewControllerLifecycleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D943B1257C9F1300642F65 /* ViewControllerLifecycleHelper.swift */; };
+		B4D943B6257CA2C400642F65 /* MockTargetViewControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D943B5257CA2C400642F65 /* MockTargetViewControllerOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		B4D943A6257C9A8800642F65 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		B4D943AB257C9DB000642F65 /* TargetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetViewController.swift; sourceTree = "<group>"; };
 		B4D943B1257C9F1300642F65 /* ViewControllerLifecycleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLifecycleHelper.swift; sourceTree = "<group>"; };
+		B4D943B5257CA2C400642F65 /* MockTargetViewControllerOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTargetViewControllerOutput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				B4D943A6257C9A8800642F65 /* ViewControllerTests.swift */,
+				B4D943B5257CA2C400642F65 /* MockTargetViewControllerOutput.swift */,
 				B4D943B1257C9F1300642F65 /* ViewControllerLifecycleHelper.swift */,
 			);
 			path = ViewControllerTests;
@@ -281,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D943B6257CA2C400642F65 /* MockTargetViewControllerOutput.swift in Sources */,
 				5AD32FC5257336DD00204059 /* AnitPatternTestsTests.swift in Sources */,
 				5AD32FFD2573824800204059 /* AsynchronousTests.swift in Sources */,
 				B4D943A7257C9A8800642F65 /* ViewControllerTests.swift in Sources */,

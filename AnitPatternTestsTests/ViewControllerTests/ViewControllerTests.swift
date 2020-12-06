@@ -10,10 +10,18 @@ import XCTest
 
 final class ViewControllerLifecycleTests: XCTestCase {
     func testLifecycle() {
-        let target = TargetViewController()
+        // Given
+        let output = MockTargetViewControllerOutput()
+        let target = TargetViewController(output: output)
+        let expectation = self.expectation(description: "dispatch queueが実行されること")
         DispatchQueue.main.async {
+            // When
             UIApplication.shared.windows.first?.rootViewController = target
-            
+            // Then
+            expectation.fulfill()
+            XCTAssertEqual(output.invokedSetupCount, 1)
+            XCTAssertEqual(output.invokedWantToInvokeAfterSetupCount, 1)
         }
+        wait(for: [expectation], timeout: 5)
     }
 }
