@@ -1,5 +1,5 @@
 //
-//  AsynchronousTest.swift
+//  AsynchronousTests.swift
 //  AnitPatternTestsTests
 //
 //  Created by rnishimu on 2020/11/29.
@@ -8,7 +8,7 @@
 @testable import AnitPatternTests
 import XCTest
 
-final class AsynchronousTest: XCTestCase {
+final class AsynchronousTests: XCTestCase {
     func testLoad() {
         // Given
         let expectation = self.expectation(description: "loadFromSomeWhereが呼び出されること")

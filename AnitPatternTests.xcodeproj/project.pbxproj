@@ -16,8 +16,11 @@
 		5AD32FC5257336DD00204059 /* AnitPatternTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD32FC4257336DD00204059 /* AnitPatternTestsTests.swift */; };
 		5AD32FE7257375AD00204059 /* MethodSwizzlingTestTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD32FE6257375AD00204059 /* MethodSwizzlingTestTarget.swift */; };
 		5AD32FF225737ADD00204059 /* AsynchronousTestTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD32FF125737ADD00204059 /* AsynchronousTestTarget.swift */; };
-		5AD32FFD2573824800204059 /* AsynchronousTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD32FFC2573824800204059 /* AsynchronousTest.swift */; };
+		5AD32FFD2573824800204059 /* AsynchronousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD32FFC2573824800204059 /* AsynchronousTests.swift */; };
 		5AD330032573825A00204059 /* MockAsynchronousTestTargetOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD330022573825A00204059 /* MockAsynchronousTestTargetOutput.swift */; };
+		B4D943A7257C9A8800642F65 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D943A6257C9A8800642F65 /* ViewControllerTests.swift */; };
+		B4D943AC257C9DB000642F65 /* TargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D943AB257C9DB000642F65 /* TargetViewController.swift */; };
+		B4D943B2257C9F1300642F65 /* ViewControllerLifecycleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D943B1257C9F1300642F65 /* ViewControllerLifecycleHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +47,11 @@
 		5AD32FC6257336DD00204059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AD32FE6257375AD00204059 /* MethodSwizzlingTestTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodSwizzlingTestTarget.swift; sourceTree = "<group>"; };
 		5AD32FF125737ADD00204059 /* AsynchronousTestTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousTestTarget.swift; sourceTree = "<group>"; };
-		5AD32FFC2573824800204059 /* AsynchronousTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousTest.swift; sourceTree = "<group>"; };
+		5AD32FFC2573824800204059 /* AsynchronousTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousTests.swift; sourceTree = "<group>"; };
 		5AD330022573825A00204059 /* MockAsynchronousTestTargetOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAsynchronousTestTargetOutput.swift; sourceTree = "<group>"; };
+		B4D943A6257C9A8800642F65 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		B4D943AB257C9DB000642F65 /* TargetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetViewController.swift; sourceTree = "<group>"; };
+		B4D943B1257C9F1300642F65 /* ViewControllerLifecycleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLifecycleHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +93,8 @@
 		5AD32FAC257336DB00204059 /* AnitPatternTests */ = {
 			isa = PBXGroup;
 			children = (
+				B4D943AA257C9D9D00642F65 /* ViewController */,
 				5AD32FF02573799600204059 /* Asynchronous */,
-				5AD32FEF2573781300204059 /* Sleeper */,
-				5AD32FEC257375B100204059 /* Inspector */,
 				5AD32FE52573750500204059 /* MethodSwizzling */,
 				5AD32FAD257336DB00204059 /* AppDelegate.swift */,
 				5AD32FAF257336DB00204059 /* SceneDelegate.swift */,
@@ -113,7 +118,8 @@
 		5AD32FC3257336DD00204059 /* AnitPatternTestsTests */ = {
 			isa = PBXGroup;
 			children = (
-				5AD32FF925737CE700204059 /* Asynchronous */,
+				B4D9439F257C9A4B00642F65 /* ViewControllerTests */,
+				5AD32FF925737CE700204059 /* UseAsynchronousTests */,
 				5AD32FC4257336DD00204059 /* AnitPatternTestsTests.swift */,
 				5AD32FC6257336DD00204059 /* Info.plist */,
 			);
@@ -128,20 +134,6 @@
 			path = MethodSwizzling;
 			sourceTree = "<group>";
 		};
-		5AD32FEC257375B100204059 /* Inspector */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Inspector;
-			sourceTree = "<group>";
-		};
-		5AD32FEF2573781300204059 /* Sleeper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Sleeper;
-			sourceTree = "<group>";
-		};
 		5AD32FF02573799600204059 /* Asynchronous */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,13 +142,30 @@
 			path = Asynchronous;
 			sourceTree = "<group>";
 		};
-		5AD32FF925737CE700204059 /* Asynchronous */ = {
+		5AD32FF925737CE700204059 /* UseAsynchronousTests */ = {
 			isa = PBXGroup;
 			children = (
-				5AD32FFC2573824800204059 /* AsynchronousTest.swift */,
+				5AD32FFC2573824800204059 /* AsynchronousTests.swift */,
 				5AD330022573825A00204059 /* MockAsynchronousTestTargetOutput.swift */,
 			);
-			path = Asynchronous;
+			path = UseAsynchronousTests;
+			sourceTree = "<group>";
+		};
+		B4D9439F257C9A4B00642F65 /* ViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4D943A6257C9A8800642F65 /* ViewControllerTests.swift */,
+				B4D943B1257C9F1300642F65 /* ViewControllerLifecycleHelper.swift */,
+			);
+			path = ViewControllerTests;
+			sourceTree = "<group>";
+		};
+		B4D943AA257C9D9D00642F65 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B4D943AB257C9DB000642F65 /* TargetViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AD32FAE257336DB00204059 /* AppDelegate.swift in Sources */,
+				B4D943AC257C9DB000642F65 /* TargetViewController.swift in Sources */,
 				5AD32FB0257336DB00204059 /* SceneDelegate.swift in Sources */,
 				5AD32FB2257336DB00204059 /* ContentView.swift in Sources */,
 				5AD32FF225737ADD00204059 /* AsynchronousTestTarget.swift in Sources */,
@@ -272,7 +282,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AD32FC5257336DD00204059 /* AnitPatternTestsTests.swift in Sources */,
-				5AD32FFD2573824800204059 /* AsynchronousTest.swift in Sources */,
+				5AD32FFD2573824800204059 /* AsynchronousTests.swift in Sources */,
+				B4D943A7257C9A8800642F65 /* ViewControllerTests.swift in Sources */,
+				B4D943B2257C9F1300642F65 /* ViewControllerLifecycleHelper.swift in Sources */,
 				5AD330032573825A00204059 /* MockAsynchronousTestTargetOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
