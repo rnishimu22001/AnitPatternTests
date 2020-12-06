@@ -9,7 +9,8 @@ import XCTest
 @testable import AnitPatternTests
 
 final class ViewControllerLifecycleTests: XCTestCase {
-    func testLifecycle() {
+    /// ダメなパターン
+    func testLifecycleAntiPattern() {
         // Given
         let output = MockTargetViewControllerOutput()
         let target = TargetViewController(output: output)
@@ -24,5 +25,21 @@ final class ViewControllerLifecycleTests: XCTestCase {
             }
         }
         wait(for: [expectation], timeout: 5)
+    }
+    
+    /// よさそうだと思ったパターン
+    func testLifecycleGoodPattern() {
+    
+        // Given
+        let output = MockTargetViewControllerOutput()
+        let target = TargetViewController(output: output)
+        // When
+        target.viewDidLoad()
+        // Then
+        XCTAssertEqual(output.invokedSetupCount, 1)
+        // When
+        target.viewDidAppear(false)
+        // Then
+        XCTAssertEqual(output.invokedWantToInvokeAfterSetupCount, 1)
     }
 }
