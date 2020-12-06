@@ -6,7 +6,7 @@
 //
 
 protocol AsynchronousTestTargetOutput {
-    func loadFromSomeWhere(completion: (() -> Void))
+    func loadFromSomeWhere(completion: @escaping (() -> Void))
 }
 
 final class AsynchronousTestTarget {
@@ -23,11 +23,10 @@ final class AsynchronousTestTarget {
         self.output = output
     }
     
-    func load(completion: @escaping (() -> Void)) {
+    func load() {
         status = .loading
-        output.loadFromSomeWhere {
-            status = .didLoad
-            completion()
+        output.loadFromSomeWhere { [weak self] in
+            self?.status = .didLoad
         }
     }
 }
