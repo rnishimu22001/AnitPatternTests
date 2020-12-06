@@ -37,9 +37,11 @@ final class ViewControllerLifecycleTests: XCTestCase {
         target.viewDidLoad()
         // Then
         XCTAssertEqual(output.invokedSetupCount, 1)
+        XCTAssertEqual(output.invokedWantToInvokeAfterSetupCount, 0, "viewDidLoadでは呼び出されない")
         // When
         target.viewDidAppear(false)
         // Then
+        XCTAssertEqual(output.invokedSetupCount, 1, "viewDidAppearでは呼び出されない")
         XCTAssertEqual(output.invokedWantToInvokeAfterSetupCount, 1)
     }
 }
