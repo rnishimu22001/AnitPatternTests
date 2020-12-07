@@ -18,9 +18,11 @@
 		5AD32FF225737ADD00204059 /* AsynchronousTestTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD32FF125737ADD00204059 /* AsynchronousTestTarget.swift */; };
 		5AD32FFD2573824800204059 /* AsynchronousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD32FFC2573824800204059 /* AsynchronousTests.swift */; };
 		5AD330032573825A00204059 /* MockAsynchronousTestTargetOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD330022573825A00204059 /* MockAsynchronousTestTargetOutput.swift */; };
+		B4C14E34257D09B300D8D220 /* SleeperTestTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C14E33257D09B300D8D220 /* SleeperTestTarget.swift */; };
+		B4C14E3B257D0E7800D8D220 /* SleeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C14E3A257D0E7800D8D220 /* SleeperTests.swift */; };
+		B4C14E41257D119700D8D220 /* MockNotificationCenterFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C14E40257D119700D8D220 /* MockNotificationCenterFacade.swift */; };
 		B4D943A7257C9A8800642F65 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D943A6257C9A8800642F65 /* ViewControllerTests.swift */; };
 		B4D943AC257C9DB000642F65 /* TargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D943AB257C9DB000642F65 /* TargetViewController.swift */; };
-		B4D943B2257C9F1300642F65 /* ViewControllerLifecycleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D943B1257C9F1300642F65 /* ViewControllerLifecycleHelper.swift */; };
 		B4D943B6257CA2C400642F65 /* MockTargetViewControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D943B5257CA2C400642F65 /* MockTargetViewControllerOutput.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,9 +52,11 @@
 		5AD32FF125737ADD00204059 /* AsynchronousTestTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousTestTarget.swift; sourceTree = "<group>"; };
 		5AD32FFC2573824800204059 /* AsynchronousTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousTests.swift; sourceTree = "<group>"; };
 		5AD330022573825A00204059 /* MockAsynchronousTestTargetOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAsynchronousTestTargetOutput.swift; sourceTree = "<group>"; };
+		B4C14E33257D09B300D8D220 /* SleeperTestTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleeperTestTarget.swift; sourceTree = "<group>"; };
+		B4C14E3A257D0E7800D8D220 /* SleeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleeperTests.swift; sourceTree = "<group>"; };
+		B4C14E40257D119700D8D220 /* MockNotificationCenterFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNotificationCenterFacade.swift; sourceTree = "<group>"; };
 		B4D943A6257C9A8800642F65 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		B4D943AB257C9DB000642F65 /* TargetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetViewController.swift; sourceTree = "<group>"; };
-		B4D943B1257C9F1300642F65 /* ViewControllerLifecycleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLifecycleHelper.swift; sourceTree = "<group>"; };
 		B4D943B5257CA2C400642F65 /* MockTargetViewControllerOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTargetViewControllerOutput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +99,7 @@
 		5AD32FAC257336DB00204059 /* AnitPatternTests */ = {
 			isa = PBXGroup;
 			children = (
+				B4C14E32257D07ED00D8D220 /* Sleeper */,
 				B4D943AA257C9D9D00642F65 /* ViewController */,
 				5AD32FF02573799600204059 /* Asynchronous */,
 				5AD32FE52573750500204059 /* MethodSwizzling */,
@@ -120,6 +125,7 @@
 		5AD32FC3257336DD00204059 /* AnitPatternTestsTests */ = {
 			isa = PBXGroup;
 			children = (
+				B4C14E39257D0E4800D8D220 /* SleeperTests */,
 				B4D9439F257C9A4B00642F65 /* ViewControllerTests */,
 				5AD32FF925737CE700204059 /* UseAsynchronousTests */,
 				5AD32FC4257336DD00204059 /* AnitPatternTestsTests.swift */,
@@ -153,12 +159,28 @@
 			path = UseAsynchronousTests;
 			sourceTree = "<group>";
 		};
+		B4C14E32257D07ED00D8D220 /* Sleeper */ = {
+			isa = PBXGroup;
+			children = (
+				B4C14E33257D09B300D8D220 /* SleeperTestTarget.swift */,
+			);
+			path = Sleeper;
+			sourceTree = "<group>";
+		};
+		B4C14E39257D0E4800D8D220 /* SleeperTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4C14E3A257D0E7800D8D220 /* SleeperTests.swift */,
+				B4C14E40257D119700D8D220 /* MockNotificationCenterFacade.swift */,
+			);
+			path = SleeperTests;
+			sourceTree = "<group>";
+		};
 		B4D9439F257C9A4B00642F65 /* ViewControllerTests */ = {
 			isa = PBXGroup;
 			children = (
 				B4D943A6257C9A8800642F65 /* ViewControllerTests.swift */,
 				B4D943B5257CA2C400642F65 /* MockTargetViewControllerOutput.swift */,
-				B4D943B1257C9F1300642F65 /* ViewControllerLifecycleHelper.swift */,
 			);
 			path = ViewControllerTests;
 			sourceTree = "<group>";
@@ -272,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AD32FAE257336DB00204059 /* AppDelegate.swift in Sources */,
+				B4C14E34257D09B300D8D220 /* SleeperTestTarget.swift in Sources */,
 				B4D943AC257C9DB000642F65 /* TargetViewController.swift in Sources */,
 				5AD32FB0257336DB00204059 /* SceneDelegate.swift in Sources */,
 				5AD32FB2257336DB00204059 /* ContentView.swift in Sources */,
@@ -285,10 +308,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4D943B6257CA2C400642F65 /* MockTargetViewControllerOutput.swift in Sources */,
+				B4C14E41257D119700D8D220 /* MockNotificationCenterFacade.swift in Sources */,
 				5AD32FC5257336DD00204059 /* AnitPatternTestsTests.swift in Sources */,
 				5AD32FFD2573824800204059 /* AsynchronousTests.swift in Sources */,
 				B4D943A7257C9A8800642F65 /* ViewControllerTests.swift in Sources */,
-				B4D943B2257C9F1300642F65 /* ViewControllerLifecycleHelper.swift in Sources */,
+				B4C14E3B257D0E7800D8D220 /* SleeperTests.swift in Sources */,
 				5AD330032573825A00204059 /* MockAsynchronousTestTargetOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -40,7 +40,6 @@ final class ViewControllerLifecycleTests: XCTestCase {
             let output = MockTargetViewControllerOutput()
             let target = TargetViewController(output: output)
             // When
-            // When
             target.viewDidAppear(false)
             // Then
             XCTAssertEqual(output.invokedWantToInvokeOnlyOnceCount, 1)
@@ -49,7 +48,6 @@ final class ViewControllerLifecycleTests: XCTestCase {
             // Given
             let output = MockTargetViewControllerOutput()
             let target = TargetViewController(output: output)
-            // When
             // When
             target.viewDidAppear(false)
             target.viewDidAppear(false)
