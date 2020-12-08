@@ -14,13 +14,11 @@
 		5AD32FB7257336DC00204059 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AD32FB6257336DC00204059 /* Preview Assets.xcassets */; };
 		5AD32FBA257336DC00204059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD32FB8257336DC00204059 /* LaunchScreen.storyboard */; };
 		5AD32FC5257336DD00204059 /* AnitPatternTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD32FC4257336DD00204059 /* AnitPatternTestsTests.swift */; };
-		5AD32FE7257375AD00204059 /* MethodSwizzlingTestTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD32FE6257375AD00204059 /* MethodSwizzlingTestTarget.swift */; };
 		5AD32FF225737ADD00204059 /* AsynchronousTestTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD32FF125737ADD00204059 /* AsynchronousTestTarget.swift */; };
 		5AD32FFD2573824800204059 /* AsynchronousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD32FFC2573824800204059 /* AsynchronousTests.swift */; };
 		5AD330032573825A00204059 /* MockAsynchronousTestTargetOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD330022573825A00204059 /* MockAsynchronousTestTargetOutput.swift */; };
-		B4C14E34257D09B300D8D220 /* SleeperTestTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C14E33257D09B300D8D220 /* SleeperTestTarget.swift */; };
-		B4C14E3B257D0E7800D8D220 /* SleeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C14E3A257D0E7800D8D220 /* SleeperTests.swift */; };
-		B4C14E41257D119700D8D220 /* MockNotificationCenterFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C14E40257D119700D8D220 /* MockNotificationCenterFacade.swift */; };
+		B4CE6B49257FC14100EC41C0 /* ButterflyTestTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CE6B48257FC14100EC41C0 /* ButterflyTestTarget.swift */; };
+		B4CE6B54257FC49400EC41C0 /* ButterflyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CE6B53257FC49400EC41C0 /* ButterflyTests.swift */; };
 		B4D943A7257C9A8800642F65 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D943A6257C9A8800642F65 /* ViewControllerTests.swift */; };
 		B4D943AC257C9DB000642F65 /* TargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D943AB257C9DB000642F65 /* TargetViewController.swift */; };
 		B4D943B6257CA2C400642F65 /* MockTargetViewControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D943B5257CA2C400642F65 /* MockTargetViewControllerOutput.swift */; };
@@ -48,13 +46,11 @@
 		5AD32FC0257336DD00204059 /* AnitPatternTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnitPatternTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD32FC4257336DD00204059 /* AnitPatternTestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnitPatternTestsTests.swift; sourceTree = "<group>"; };
 		5AD32FC6257336DD00204059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5AD32FE6257375AD00204059 /* MethodSwizzlingTestTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodSwizzlingTestTarget.swift; sourceTree = "<group>"; };
 		5AD32FF125737ADD00204059 /* AsynchronousTestTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousTestTarget.swift; sourceTree = "<group>"; };
 		5AD32FFC2573824800204059 /* AsynchronousTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousTests.swift; sourceTree = "<group>"; };
 		5AD330022573825A00204059 /* MockAsynchronousTestTargetOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAsynchronousTestTargetOutput.swift; sourceTree = "<group>"; };
-		B4C14E33257D09B300D8D220 /* SleeperTestTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleeperTestTarget.swift; sourceTree = "<group>"; };
-		B4C14E3A257D0E7800D8D220 /* SleeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleeperTests.swift; sourceTree = "<group>"; };
-		B4C14E40257D119700D8D220 /* MockNotificationCenterFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNotificationCenterFacade.swift; sourceTree = "<group>"; };
+		B4CE6B48257FC14100EC41C0 /* ButterflyTestTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyTestTarget.swift; sourceTree = "<group>"; };
+		B4CE6B53257FC49400EC41C0 /* ButterflyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyTests.swift; sourceTree = "<group>"; };
 		B4D943A6257C9A8800642F65 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		B4D943AB257C9DB000642F65 /* TargetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetViewController.swift; sourceTree = "<group>"; };
 		B4D943B5257CA2C400642F65 /* MockTargetViewControllerOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTargetViewControllerOutput.swift; sourceTree = "<group>"; };
@@ -99,10 +95,9 @@
 		5AD32FAC257336DB00204059 /* AnitPatternTests */ = {
 			isa = PBXGroup;
 			children = (
-				B4C14E32257D07ED00D8D220 /* Sleeper */,
+				B4CE6B47257FC12500EC41C0 /* Butterfly */,
 				B4D943AA257C9D9D00642F65 /* ViewController */,
 				5AD32FF02573799600204059 /* Asynchronous */,
-				5AD32FE52573750500204059 /* MethodSwizzling */,
 				5AD32FAD257336DB00204059 /* AppDelegate.swift */,
 				5AD32FAF257336DB00204059 /* SceneDelegate.swift */,
 				5AD32FB1257336DB00204059 /* ContentView.swift */,
@@ -125,21 +120,13 @@
 		5AD32FC3257336DD00204059 /* AnitPatternTestsTests */ = {
 			isa = PBXGroup;
 			children = (
-				B4C14E39257D0E4800D8D220 /* SleeperTests */,
+				B4CE6B52257FC2D000EC41C0 /* ButterflyTests */,
 				B4D9439F257C9A4B00642F65 /* ViewControllerTests */,
 				5AD32FF925737CE700204059 /* UseAsynchronousTests */,
 				5AD32FC4257336DD00204059 /* AnitPatternTestsTests.swift */,
 				5AD32FC6257336DD00204059 /* Info.plist */,
 			);
 			path = AnitPatternTestsTests;
-			sourceTree = "<group>";
-		};
-		5AD32FE52573750500204059 /* MethodSwizzling */ = {
-			isa = PBXGroup;
-			children = (
-				5AD32FE6257375AD00204059 /* MethodSwizzlingTestTarget.swift */,
-			);
-			path = MethodSwizzling;
 			sourceTree = "<group>";
 		};
 		5AD32FF02573799600204059 /* Asynchronous */ = {
@@ -159,21 +146,20 @@
 			path = UseAsynchronousTests;
 			sourceTree = "<group>";
 		};
-		B4C14E32257D07ED00D8D220 /* Sleeper */ = {
+		B4CE6B47257FC12500EC41C0 /* Butterfly */ = {
 			isa = PBXGroup;
 			children = (
-				B4C14E33257D09B300D8D220 /* SleeperTestTarget.swift */,
+				B4CE6B48257FC14100EC41C0 /* ButterflyTestTarget.swift */,
 			);
-			path = Sleeper;
+			path = Butterfly;
 			sourceTree = "<group>";
 		};
-		B4C14E39257D0E4800D8D220 /* SleeperTests */ = {
+		B4CE6B52257FC2D000EC41C0 /* ButterflyTests */ = {
 			isa = PBXGroup;
 			children = (
-				B4C14E3A257D0E7800D8D220 /* SleeperTests.swift */,
-				B4C14E40257D119700D8D220 /* MockNotificationCenterFacade.swift */,
+				B4CE6B53257FC49400EC41C0 /* ButterflyTests.swift */,
 			);
-			path = SleeperTests;
+			path = ButterflyTests;
 			sourceTree = "<group>";
 		};
 		B4D9439F257C9A4B00642F65 /* ViewControllerTests */ = {
@@ -294,12 +280,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AD32FAE257336DB00204059 /* AppDelegate.swift in Sources */,
-				B4C14E34257D09B300D8D220 /* SleeperTestTarget.swift in Sources */,
 				B4D943AC257C9DB000642F65 /* TargetViewController.swift in Sources */,
 				5AD32FB0257336DB00204059 /* SceneDelegate.swift in Sources */,
 				5AD32FB2257336DB00204059 /* ContentView.swift in Sources */,
 				5AD32FF225737ADD00204059 /* AsynchronousTestTarget.swift in Sources */,
-				5AD32FE7257375AD00204059 /* MethodSwizzlingTestTarget.swift in Sources */,
+				B4CE6B49257FC14100EC41C0 /* ButterflyTestTarget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,11 +293,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4D943B6257CA2C400642F65 /* MockTargetViewControllerOutput.swift in Sources */,
-				B4C14E41257D119700D8D220 /* MockNotificationCenterFacade.swift in Sources */,
+				B4CE6B54257FC49400EC41C0 /* ButterflyTests.swift in Sources */,
 				5AD32FC5257336DD00204059 /* AnitPatternTestsTests.swift in Sources */,
 				5AD32FFD2573824800204059 /* AsynchronousTests.swift in Sources */,
 				B4D943A7257C9A8800642F65 /* ViewControllerTests.swift in Sources */,
-				B4C14E3B257D0E7800D8D220 /* SleeperTests.swift in Sources */,
 				5AD330032573825A00204059 /* MockAsynchronousTestTargetOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
