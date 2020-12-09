@@ -9,14 +9,15 @@ import XCTest
 @testable import AnitPatternTests
 
 final class ButterflyTests: XCTestCase {
-    func testTenMinutesLater() {
-        // Given
-        let target = ButterflyTestTarget()
-        // When
-        let result = target.tenMinutesLater()
-        // Then
-        let tenMinutesLater = Date().timeIntervalSince1970 + 10 * 60
-        XCTAssertGreaterThanOrEqual(result, tenMinutesLater - 1, "テストコードとテスト対象")
-        XCTAssertGreaterThanOrEqual(tenMinutesLater + 1, result)
-    }
+func testTenMinutesLater() {
+    // Given
+    let target = ButterflyTestTarget()
+    let now = Date()
+    // When
+    let result = target.tenMinutesLater(from: now)
+    // Then
+    let tenMinutesLater = now.timeIntervalSince1970 + 10 * 60
+    XCTAssertEqual(tenMinutesLater, result)
+    
+}
 }
